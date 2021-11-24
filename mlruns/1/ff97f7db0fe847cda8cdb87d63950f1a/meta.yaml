@@ -1,0 +1,15 @@
+artifact_uri: file:///home/etienne/code/CRESPINetienne/TaxiFareModel/mlruns/1/ff97f7db0fe847cda8cdb87d63950f1a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: ff97f7db0fe847cda8cdb87d63950f1a
+run_uuid: ff97f7db0fe847cda8cdb87d63950f1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637675182899
+status: 1
+tags: []
+user_id: unknown

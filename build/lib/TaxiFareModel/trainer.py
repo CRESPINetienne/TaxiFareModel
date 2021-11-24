@@ -14,7 +14,7 @@ import joblib
 
 estimat = LinearRegression()
 MLFLOW_URI = "https://mlflow.lewagon.co/"
-EXPERIMENT_NAME = "[FR] [LILLE] [EtienneC] LinearRegression v2"
+EXPERIMENT_NAME = "[FR] [LILLE] [EtienneC] LinearRegression v1"
 
 
 class Trainer():
@@ -62,8 +62,6 @@ class Trainer():
 
     def save_model(self):
         """ Save the trained model into a model.joblib file """
-        self.run()
-        return joblib.dump(pipeline, 'model.joblib')
 
 
     @memoized_property
@@ -103,7 +101,6 @@ if __name__ == "__main__":
     score = trainer.evaluate()
     trainer.mlflow_log_metric('rmse', score)
     trainer.mlflow_log_param('estimator', estimat)
-    trainer.save_model()
 
 experiment_id = trainer.mlflow_experiment_id
 print(f"experiment URL: https://mlflow.lewagon.co/#/experiments/{experiment_id}")
